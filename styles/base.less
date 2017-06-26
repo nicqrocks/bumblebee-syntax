@@ -35,7 +35,7 @@ atom-text-editor {
   .gutter .line-number.folded,
   .gutter .line-number:after,
   .fold-marker:after {
-    color: @light-gray;
+    color: @p-light;
   }
 
   .invisible {
@@ -55,14 +55,14 @@ atom-text-editor {
 // Syntax styles
 
 .syntax--comment {
-  color: @light-gray;
+  color: @t-light;
 }
 
 .syntax--keyword {
-  color: @purple;
+  color: @t-dark;
 
   &.syntax--control {
-    color: @purple;
+    color: @t-dark;
   }
 
   &.syntax--operator {
@@ -70,35 +70,35 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--special-method {
-    color: @blue;
+    color: @t-main;
   }
 
   &.syntax--other.syntax--unit {
-    color: @orange;
+    color: @t-main;
   }
 }
 
 .syntax--storage {
-  color: @purple;
+  color: @t-dark;
 }
 
 .syntax--constant {
-  color: @orange;
+  color: @t-main;
 
   &.syntax--character.syntax--escape {
-    color: @cyan;
+    color: @p-light;
   }
 
   &.syntax--numeric {
-    color: @orange;
+    color: @p-main;
   }
 
   &.syntax--other.syntax--color {
-    color: @cyan;
+    color: @p-light;
   }
 
   &.syntax--other.syntax--symbol {
-    color: @green;
+    color: @t-light;
   }
 }
 
@@ -120,14 +120,14 @@ atom-text-editor {
 }
 
 .syntax--string {
-  color: @green;
+  color: @t-light;
 
 
   &.syntax--regexp {
-    color: @cyan;
+    color: @p-light;
 
     .syntax--source.syntax--ruby.syntax--embedded {
-      color: @orange;
+      color: @p-main;
     }
   }
 
@@ -160,7 +160,7 @@ atom-text-editor {
     }
 
     &.syntax--italic {
-      color: @purple;
+      color: @p-main;
       font-style: italic;
     }
   }
@@ -177,7 +177,7 @@ atom-text-editor {
   }
 
   &.syntax--function  {
-    color: @cyan;
+    color: @p-light;
 
     &.syntax--any-method {
       color: @blue;
@@ -195,7 +195,7 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--inherited-class {
-    color: @green;
+    color: @t-light;
   }
   &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
     color: @light-orange;
@@ -211,7 +211,7 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--attribute-name {
-    color: @orange;
+    color: @p-main;
 
     &.syntax--id {
       color: @blue;
@@ -225,7 +225,7 @@ atom-text-editor {
   }
 
   &.syntax--link {
-    color: @orange;
+    color: @p-main;
   }
 
   &.syntax--require {
@@ -233,7 +233,7 @@ atom-text-editor {
   }
 
   &.syntax--selector {
-    color: @purple;
+    color: @p-main;
   }
 
   &.syntax--separator {
@@ -248,12 +248,12 @@ atom-text-editor {
 
 .syntax--markup {
   &.syntax--bold {
-    color: @orange;
+    color: @p-main;
     font-weight: bold;
   }
 
   &.syntax--changed {
-    color: @purple;
+    color: @p-main;
   }
 
   &.syntax--deleted {
@@ -261,7 +261,7 @@ atom-text-editor {
   }
 
   &.syntax--italic {
-    color: @purple;
+    color: @p-main;
     font-style: italic;
   }
 
@@ -270,7 +270,7 @@ atom-text-editor {
   }
 
   &.syntax--inserted {
-    color: @green;
+    color: @t-light;
   }
 
   &.syntax--list {
@@ -278,18 +278,18 @@ atom-text-editor {
   }
 
   &.syntax--quote {
-    color: @orange;
+    color: @p-main;
   }
 
   &.syntax--raw.syntax--inline {
-    color: @green;
+    color: @t-light;
   }
 }
 
 .syntax--source.syntax--gfm .syntax--markup {
   -webkit-font-smoothing: auto;
   &.syntax--heading {
-    color: @green;
+    color: @t-light;
   }
 }
 
