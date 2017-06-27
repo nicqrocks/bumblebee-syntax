@@ -1,13 +1,16 @@
 {
   "name": "bumblebee-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "version": "0.0.1",
+  "description": "Dark theme primarily using the colors yellow and black.",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+    "dark",
+    "yellow",
+    "black"
   ],
-  "repository": "https://github.com/atom/bumblebee-syntax",
+  "repository": "https://github.com/nicqrocks/bumblebee-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
