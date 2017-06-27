@@ -59,10 +59,10 @@ atom-text-editor {
 }
 
 .syntax--keyword {
-  color: @t-dark;
+  color: @p-dark;
 
   &.syntax--control {
-    color: @t-dark;
+    color: @p-dark;
   }
 
   &.syntax--operator {
@@ -70,7 +70,7 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--special-method {
-    color: @t-main;
+    color: @p-main;
   }
 
   &.syntax--other.syntax--unit {
@@ -79,11 +79,11 @@ atom-text-editor {
 }
 
 .syntax--storage {
-  color: @t-dark;
+  color: @t-main;
 }
 
 .syntax--constant {
-  color: @t-main;
+  color: @t-light;
 
   &.syntax--character.syntax--escape {
     color: @p-light;
@@ -110,12 +110,12 @@ atom-text-editor {
   }
 
   &.syntax--parameter.syntax--function {
-    color: @syntax-text-color;
+    color: @p-main;
   }
 }
 
 .syntax--invalid.syntax--illegal {
-  background-color: @p-main;
+  background-color: @p-dark;
   color: @syntax-background-color;
 }
 
@@ -146,7 +146,7 @@ atom-text-editor {
     &.syntax--variable,
     &.syntax--parameters,
     &.syntax--array {
-      color: @syntax-text-color;
+      color: @t-dark;
     }
 
     &.syntax--heading,
@@ -160,7 +160,7 @@ atom-text-editor {
     }
 
     &.syntax--italic {
-      color: @p-main;
+      color: @p-light;
       font-style: italic;
     }
   }
