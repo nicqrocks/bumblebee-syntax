@@ -103,7 +103,7 @@ atom-text-editor {
 }
 
 .syntax--variable {
-  color: @p-main;
+  color: @p-light;
 
   &.syntax--interpolation {
     color: darken(@p-main, 10%);
@@ -139,14 +139,14 @@ atom-text-editor {
 .syntax--punctuation {
   &.syntax--definition {
     &.syntax--comment {
-      color: @t-dark;
+      color: @t-light;
     }
 
     &.syntax--string,
     &.syntax--variable,
     &.syntax--parameters,
     &.syntax--array {
-      color: @t-dark;
+      color: @p-light;
     }
 
     &.syntax--heading,
@@ -173,11 +173,11 @@ atom-text-editor {
 
 .syntax--support {
   &.syntax--class {
-    color: @s-dark;
+    color: @p-dark;
   }
 
   &.syntax--function  {
-    color: @p-light;
+    color: @p-main;
 
     &.syntax--any-method {
       color: @s-dark;
@@ -187,7 +187,7 @@ atom-text-editor {
 
 .syntax--entity {
   &.syntax--name.syntax--function {
-    color: @p-light;
+    color: @p-main;
   }
   &.syntax--name.syntax--type {
     color: @p-dark;
@@ -195,7 +195,7 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--inherited-class {
-    color: @t-light;
+    color: @p-dark;
   }
   &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
     color: @p-dark;
@@ -221,7 +221,7 @@ atom-text-editor {
 
 .syntax--meta {
   &.syntax--class {
-    color: @p-light;
+    color: @p-dark;
   }
 
   &.syntax--link {
@@ -229,11 +229,11 @@ atom-text-editor {
   }
 
   &.syntax--require {
-    color: @p-dark;
+    color: @t-light;
   }
 
   &.syntax--selector {
-    color: @p-main;
+    color: @p-light;
   }
 
   &.syntax--separator {
