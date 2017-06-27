@@ -1,7 +1,7 @@
 {
   "name": "bumblebee-syntax",
   "theme": "syntax",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Dark theme primarily using the colors yellow and black.",
   "keywords": [
     "syntax",
