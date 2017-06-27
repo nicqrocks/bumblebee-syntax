@@ -1,8 +1,8 @@
 @import "syntax-variables";
 
 atom-text-editor {
-  background-color: @syntax-background-color;
-  color: @syntax-text-color;
+  background-color: @selected-background;
+  color: @general-text;
 
   .wrap-guide {
     background-color: @syntax-wrap-guide-color;
@@ -39,15 +39,15 @@ atom-text-editor {
   }
 
   .invisible {
-    color: @syntax-text-color;
+    color: @general-text;
   }
 
   .cursor {
-    color: @syntax-cursor-color;
+    color: @curser;
   }
 
   .selection .region {
-    background-color: @syntax-selection-color;
+    background-color: @selected-text;
   }
 }
 
@@ -66,7 +66,7 @@ atom-text-editor {
   }
 
   &.syntax--operator {
-    color: @syntax-text-color;
+    color: @general-text;
   }
 
   &.syntax--other.syntax--special-method {
@@ -103,20 +103,20 @@ atom-text-editor {
 }
 
 .syntax--variable {
-  color: @p-light;
+  color: @variables;
 
   &.syntax--interpolation {
     color: darken(@p-main, 10%);
   }
 
   &.syntax--parameter.syntax--function {
-    color: @p-main;
+    color: @functions;
   }
 }
 
 .syntax--invalid.syntax--illegal {
   background-color: @p-dark;
-  color: @syntax-background-color;
+  color: @selected-background;
 }
 
 .syntax--string {
@@ -146,7 +146,7 @@ atom-text-editor {
     &.syntax--variable,
     &.syntax--parameters,
     &.syntax--array {
-      color: @p-light;
+      color: @variables;
     }
 
     &.syntax--heading,
@@ -173,11 +173,11 @@ atom-text-editor {
 
 .syntax--support {
   &.syntax--class {
-    color: @p-dark;
+    color: @classes;
   }
 
   &.syntax--function  {
-    color: @p-main;
+    color: @functions;
 
     &.syntax--any-method {
       color: @s-dark;
@@ -187,7 +187,7 @@ atom-text-editor {
 
 .syntax--entity {
   &.syntax--name.syntax--function {
-    color: @p-main;
+    color: @functions;
   }
   &.syntax--name.syntax--type {
     color: @p-dark;
@@ -195,10 +195,10 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--inherited-class {
-    color: @p-dark;
+    color: @classes;
   }
   &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
-    color: @p-dark;
+    color: @classes;
   }
 
   &.syntax--name.syntax--section {
@@ -221,7 +221,7 @@ atom-text-editor {
 
 .syntax--meta {
   &.syntax--class {
-    color: @p-dark;
+    color: @classes;
   }
 
   &.syntax--link {
@@ -238,12 +238,12 @@ atom-text-editor {
 
   &.syntax--separator {
     background-color: @t-dark;
-    color: @syntax-text-color;
+    color: @general-text;
   }
 }
 
 .syntax--none {
-  color: @syntax-text-color;
+  color: @general-text;
 }
 
 .syntax--markup {
